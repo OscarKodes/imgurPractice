@@ -32,7 +32,7 @@ app.get("/upload", function(req, res){
 app.post("/", upload.single("photo"), function(req, res){
   console.log(req.file);
   console.log(req.body);
-  res.write("<p>UPLOADE IMAGE FUCKING SUCCESS</p>");
+  res.write("<p>UPLOADED IMAGE FUCKING SUCCESS</p>");
   res.write("<img src='" + req.file.data.link + "'>");
 });
 
