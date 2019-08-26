@@ -11,8 +11,12 @@ app.set("view engine", "ejs");
 
 // routes
 app.get("/", function(req, res){
-  res.send("sup");
+  res.render("front");
 });
+
+app.get("/upload", function(req, res){
+  res.render("upload");
+})
 
 app.listen(3000, function(){
   console.log("Server is running on port 3000.");
